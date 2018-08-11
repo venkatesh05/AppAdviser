@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jQMProgressBar.css" />
+    <title>Index</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/country.js"></script>
+    <script src="js/configuration.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/categoryHome.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/signin.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/jQMProgressBar.js"></script>
+    <script src="js/GALocalStorage.js"></script>
+    <script>
+        document.write('<script src="js/i18n/' + $.mobile.language + '.js"><\/script>');
+        if($.mobile.platform == $.mobile.android){
+            document.write('<script src="js/parsePluginAndroid.js"><\/script>');
+            document.write('<script src="js/recieveAndroidNotification.js"><\/script>');
+            document.write('<script src="js/webintent.js"><\/script>');
+        }else if($.mobile.platform == $.mobile.iOS){
+            document.write('<script src="js/cdv-plugin-parse.js"><\/script>');
+        }
+    </script>
+    <script src="js/PushNotification.js"></script>
+</head>
+<body>
+    <div data-role="page" id="index">
+        <script>
+            function openFirstTime(){
+                if(!window.localStorage.getItem('countryCodeFromMap')){
+                    fetchLocation();
+                }else{
+                    window.localStorage.setItem('countryCodeFromMap',window.localStorage.getItem('countryCodeFromMap'));
+                    $.mobile.pageContainer.pagecontainer("change", 'country.html',{reloadPage : true});
+                }
+            }
+            function openSecondTime(){
+                if(window.location.href.indexOf("?") != -1){
+                    var qrStr = window.location.href.split("?")[1].split("&");
+                    var id = qrStr[0].split("=")[1];
+                    var type = qrStr[1].split("=")[1];
+                    pushNotificationNavigation("",id,type);
+                }
+                if(isConnectionAvailable()){
+                	checkMobileRefresh(function(){
+                		$.mobile.pageContainer.pagecontainer("change", 'home.html',{reloadPage : true});
+                	});     
+                }else{
+                	$.mobile.pageContainer.pagecontainer("change", 'home.html',{reloadPage : true});
+                }
+            }
+            function onConfirm(buttonIndex) {
+                if(buttonIndex == 1){
+                    window.open('https://play.google.com/store/apps/details?id=com.tigo.appadvisor', '_system', 'location=yes');
+                    navigator.app.exitApp();
+                }else if(buttonIndex == 2){
+                    navigator.app.exitApp();
+                }
+            }
+        
+            function openConfirmation(version){
+                navigator.notification.confirm(
+                    'Version : '+version, // message
+                    onConfirm,            // callback to invoke with index of button pressed
+                    $.mobile.appName,           // title
+                    ['Actualización','Salida']     // buttonLabels
+                );
+            }
+            //Document ready this will call initially after device is ready to load application
+            document.addEventListener("deviceready", function(){
+                deviceInfo();//deviceInfo() method in general.js
+                loadLocalDB();//loadLocalDB() method in db.js
+                ga_storage._setAccount($.mobile.GATRACKID);
+                                      
+                if($.mobile.platform == $.mobile.android){
+                    androidNotification(window);//androidNotification() method in PushNotification.js
+                    document.addEventListener("backbutton", exitFromApp, false);
+                }else if($.mobile.platform == $.mobile.iOS){
+                    StatusBar.overlaysWebView(false);
+                    iosNotification();//iosNotification() method in PushNotification.js
+                }
+                //Checking localstorage variable initialAppLoad wheather its first time or second time
+                window.appversion.getVersionNumber(function(versionNumber) {
+                    $.mobile.version = versionNumber;
+                });
+                if(!window.localStorage.getItem("initialAppLoad")){
+                    //comes here for initial load
+                    if(!window.localStorage.getItem("countryTimeStamp")){
+                       window.localStorage.setItem("countryTimeStamp",0);
+                    }
+                    if(!window.localStorage.getItem("configurationTimeStamp")){
+                        window.localStorage.setItem("configurationTimeStamp",0);
+                    }
+                    if(!window.localStorage.getItem("tagsTimeStamp")){
+                        window.localStorage.setItem("tagsTimeStamp",0);
+                    }
+                    if(!window.localStorage.getItem("homeAppsTimeStamp")){
+                        window.localStorage.setItem("homeAppsTimeStamp",0);
+                    }
+                    if($.mobile.platform == $.mobile.android){
+                    if(isConnectionAvailable()){
+                        window.appversion.getVersionNumber(function(versionNumber) {
+                        	requestApiWithoutLoading("https://androidquery.appspot.com/api/market?app=com.tigo.appadvisor","get",function(responseData){
+                                if(responseData.version!=versionNumber){
+                                    openConfirmation(responseData.version);
+                                }else{
+                                    openFirstTime();
+                                }
+                            });
+                        });
+                    }else{
+                        openFirstTime();
+                    }
+                    }else if($.mobile.platform == $.mobile.iOS){
+                    	openFirstTime();
+                    }
+                }else{
+                    //comes here for second and other loads
+                    if($.mobile.platform == $.mobile.android){
+                    if(isConnectionAvailable()){
+                        window.appversion.getVersionNumber(function(versionNumber) {
+                        	requestApiWithoutLoading("https://androidquery.appspot.com/api/market?app=com.tigo.appadvisor","get",function(responseData){
+                                if(responseData.version!=versionNumber){
+                                    openConfirmation(responseData.version);
+                                }else{
+                                    openSecondTime();
+                                }
+                            });
+                        });
+                    }else{
+                        openSecondTime();
+                    }
+                    }else if($.mobile.platform == $.mobile.iOS){
+                    	openSecondTime();
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "config.xml": {
+            "/*": {
+                "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>": 1,
+                "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>": 1,
+                "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>": 1,
+                "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>": 1,
+                "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>": 1,
+                "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>": 1,
+                "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>": 1,
+                "<feature name=\"ParsePlugin\"><param name=\"ios-package\" value=\"CDVParsePlugin\" /></feature>": 1,
+                "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>": 1,
+                "<preference name=\"StatusBarOverlaysWebView\" value=\"false\" />": 1,
+                "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />": 1,
+                "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>": 1,
+                "<feature name=\"AppAvailability\"><param name=\"ios-package\" value=\"AppAvailability\" /></feature>": 1,
+                "<feature name=\"AppVersion\"><param name=\"ios-package\" value=\"AppVersion\" /></feature>": 1
+            }
+        },
+        "framework": {
+            "SystemConfiguration.framework": {
+                "true": 1,
+                "false": 1
+            },
+            "AudioToolbox.framework": {
+                "true": 1,
+                "false": 1
+            },
+            "libsqlite3.dylib": {
+                "false": 1
+            },
+            "AssetsLibrary.framework": {
+                "false": 2
+            },
+            "MobileCoreServices.framework": {
+                "false": 2
+            },
+            "Social.framework": {},
+            "Accounts.framework": {},
+            "AdSupport.framework": {},
+            "Security.framework": {
+                "false": 1
+            },
+            "CFNetwork.framework": {
+                "false": 1
+            },
+            "CoreGraphics.framework": {
+                "false": 2
+            },
+            "CoreLocation.framework": {
+                "false": 1
+            },
+            "libz.1.1.3.dylib": {
+                "false": 1
+            },
+            "QuartzCore.framework": {
+                "false": 1
+            },
+            "StoreKit.framework": {
+                "false": 1
+            }
+        },
+        "*-Info.plist": {
+            "FacebookAppID": {},
+            "FacebookDisplayName": {},
+            "CFBundleURLTypes": {}
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "com.phonegap.plugins.sqlite": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "com.borismus.webintent": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "com.phonegap.plugin.statusbar": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "com.ohh2ahh.plugins.appavailability": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "fr.smile.cordova.fileopener": {
+            "PACKAGE_NAME": "com.anubavam.appadvisor"
+        },
+        "appversion": {
+            "PACKAGE_NAME": "com.tigo.appadvisor"
+        }
+    },
+    "dependent_plugins": {}
+}

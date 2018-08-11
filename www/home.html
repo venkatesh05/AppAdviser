@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <div data-role="page" id="home" data-dom-cache="true">
+            <div data-role="header" data-position="fixed" class="homeHeader">
+                <h1 class="appheader headerONE"><img src='img/Apptualizate.png' class="imgHeader"/></h1>
+                <a href="#nav-panel" class="menuIcon"></a>
+                <div class="searchIcon" id="homeSearchIcon">
+                <a href="#"></a>
+                </div>
+                <div data-role="navbar" id="navTab">
+                    <ul id="tab">
+                        <li tagId="categoryTab"><a class="lang tabLabel ui-link ui-btn" data-lang="categories" data-inline="true" href="#categoryTab"></a></li>
+                        <li tagId="homeTab"><a class="lang tabLabel ui-link ui-btn ui-btn-active" data-lang="initiation" data-inline="true" href="#homeTab"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div role="main" class="ui-content" id="homeContent">
+                <div id="categoryTab">
+                </div>
+                <div id="homeTab">
+                    <div id="banner">
+                        
+                    </div>
+                    <div class="appContent">
+                    </div>
+                </div>
+            </div>            
+            <div class="menu" data-role="panel" data-position-fixed="true" data-theme="b" id="nav-panel" data-rel="close">
+                <ul data-role="listview" data-theme="b" class="nav-search">
+                    <li class="inicioClick"><a href="#" data-rel="close"><span class="homeIcon menuImage"></span><label class="lang menulabel" data-lang="initiation"></label></a></li>
+                    <li><a href="settings.html"><span class="configrationIcon menuImage"></span><label class="lang menulabel" data-lang="configuration"></label></a></li>
+                    <li><a href="terms.html"><span class="termsIcon menuImage"></span><label class="lang menulabel" data-lang="terms"></label></a></li>
+                </ul>
+                <div class="menuLogin">                    
+                    <label class="lang menuLoginTitle" data-lang="loginTitle"></label>
+                    <label class="lang menuLoginCaption" data-lang="loginCaption"></label>
+                    <div  class="menuSeparatorLine"><span class="menuSepartorText">ó</span></div>
+                    <label class="lang menuLoginOption" data-lang="loginOption"></label>
+                    <div>
+                        <span class="facebook socialImages" provider="facebook"></span>
+                        <span class="twitter socialImages" provider="twitter"></span>
+                        <span class="yahoo socialImages" provider="yahoo"></span>
+                        <span class="google socialImages" provider="google"></span>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+                <ul data-role="listview" data-theme="b" class="nav-search logoutmenu">
+                    <li class="inicioClick"><a href="#" data-rel="close"><span class="logoutIcon menuImage"></span><label class="lang menulabel" data-lang="logout"></label></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Settings</title>
+    </head>
+    <body>
+        <div data-role="page" id="settings">
+            <div data-role="header" data-position="fixed" class="menuheader">
+                <h1 class="lang appheader" data-lang="configuration"></h1>
+                <a href="#" data-rel="back" class="backArrow"></a>
+            </div>
+            <div role="main" class="ui-content">
+                <div  class="separatorLine"><span class="lang separtorText" data-lang="favorites"></span></div>
+                <ul data-role="listview" class="listUI settingsList">
+                    <li><a href="configuration.html"><label class="lang" data-lang="configure"></label></a></li>
+                </ul>
+                <div class="separatorLine"><span class="lang separtorText" data-lang="notifications"></span></div>
+                <ul data-role="listview" class="listUI">
+                    <li>
+                        <label class="lang" data-lang="notifyLabel" href="#"></label><span id="notificationSetting" class="on"></span>
+                    </li>
+                </ul>
+                <div class="separatorLine"><span class="separtorText">Version</span></div>
+                <ul data-role="listview" class="listUI">
+                    <li>
+                        <label href="#" class="version"></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

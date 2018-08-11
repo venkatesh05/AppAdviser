@@ -1,0 +1,1591 @@
+@font-face {
+    font-family: "CronosProBold";
+    src: url("CronosProBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "CronosProLtCapt";
+    src: url("CronosProLtCapt.otf") format("opentype");
+}
+@font-face {
+    font-family: "CronosProRegular";
+    src: url("CronosProRegular.otf") format("opentype");
+}
+* {
+   -webkit-touch-callout: none;
+}
+body {
+    font-family: "CronosProLtCapt";
+}
+
+.ui-page { -webkit-backface-visibility: hidden !important; }
+
+h1.appheader.headerONE.ui-title{
+    padding: 0;
+}
+
+div.homeHeader.ui-header.ui-bar-inherit.ui-header-fixed.slidedown{
+    border-bottom-width: 0px;
+}
+div.ui-header.ui-bar-inherit.ui-header-fixed.slidedown{
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #904E8C;
+}
+div#navTab.ui-navbar{
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #904E8C;
+}
+div#catNavTab.ui-navbar{
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #904E8C;
+}
+
+img.imgHeader{
+    display: block;
+    margin: 5px auto;
+    width:201px;
+}
+
+.countryImage{
+    height:35px;
+    width:35px;
+    margin: 15px 20px;
+}
+
+#countryList label{
+    margin: 10px 0px;
+}
+
+#countryList li.ui-li-static.ui-body-inherit.ui-li-has-thumb{
+    padding-left: 4.5em;
+    min-height: 0px;
+}
+
+#banner, #categoryBanner{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+#banner a img{
+    width: 100%;
+    height: 200px;
+}
+
+#categoryBanner a img{
+    width: 100%;
+    height: 200px;
+}
+
+.bannerImage,.categoryBannerImage{
+    width : 100%;
+    height : 200px;
+}
+
+/* Detail page */
+.headerContainer{
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+}
+.thampnailContainer{
+    float:left;
+    margin: 0 10px;
+    width: 32%;
+    height:130px;
+}
+    
+.detailContainer{
+    float:left;
+    width: 60%;
+    top:0px;
+    height:130px;
+}
+    
+.thampnailContainer img{
+    height: 100px; width: 100px;
+}
+
+.name{
+    font-family: "CronosProRegular";
+    font-size:28px;
+    color:#333;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:100%;
+}
+
+.detailName{
+    padding-top:5px;
+    font-family: "CronosProRegular";
+    font-size:22px;
+    color:#333;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:90%;
+}
+
+.hint{
+    font-family: "CronosProRegular";
+    font-size:14px;
+    color:#999;
+    padding:5px 0px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:90%;
+}
+
+.detailSubHeading{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666 !important;
+    font-weight: bold;
+}
+#whatsNew{
+    display:none;
+    margin:10px;
+}
+#version{
+    display:none;
+    margin:10px;
+}
+
+.whatsNewContent{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666 !important;
+}
+
+.versionContent{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666 !important;
+}
+
+#splash{
+    margin: 10px 0px;
+}
+
+#splash .owl-item{
+    //padding: 0px 5px;
+    margin-left:5px;
+}
+
+#splash .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbbbbb;
+}
+
+.descriptionContent{
+    margin: 10px;
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666 !important;
+}
+
+a#reviewTab.lang.ui-link.ui-btn.ui-btn-active, a#descTab.lang.ui-link.ui-btn.ui-btn-active{
+    border: none;
+    border-bottom-width: 0px;
+    border-top: 2px solid #426ab2;
+    color: #426ab2;
+}
+
+#reviewTab{
+    font-family: "CronosProRegular";
+    font-size:18px;
+    color:#666;
+}
+
+#descTab{
+    font-family: "CronosProRegular";
+    font-size:18px;
+    color:#666;
+}
+
+#description{
+    clear:both;
+    padding : 20px 0px;
+    background-color:#ffffff;
+    margin-top:-2px;
+}
+
+#reviews{
+    clear:both;
+    padding : 20px 0px;
+    background-color:#ffffff;
+    float:left;
+    margin-top:-2px;
+    width: 100%;
+}
+
+#avgRatingCount{
+    font-size : 70px;
+    color:#8BC33D;
+    font-family: "CronosProRegular";
+}
+
+.ratingStyles{
+     margin:auto;
+     width:auto;
+     text-align:center;
+}
+
+.hintTextRating{
+    color:#666 !important;
+    font-family: "CronosProRegular";
+}
+
+#avgRating{
+    margin-bottom: 40px;
+}
+
+#allRating{
+    width:50%;
+    float:left;
+}
+
+div#fiveStar{
+    width:auto !important;
+}
+
+.countLabel{
+    margin-left : 5px;
+    font-family: "CronosProRegular";
+    font-size:18px;
+    color:#333;
+}
+
+.button{
+    padding:10px;
+    background:#8BC33E;
+    border-radius:5px;
+    color:#ffffff;
+    float:left;
+    margin-right:10px;
+}
+
+.downloadButton{
+    padding:10px;
+    background:#8BC33E;
+    border-radius:5px;
+    color:#ffffff;
+    float:right;
+    margin-right:10px;
+    margin-right:10px;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#fff;
+}
+
+#progressbar{
+    display: block;
+    width: 70%;
+    clear: none;
+    float: right;
+}
+
+.footerButtons{
+    float:right;
+    padding:10px;
+}
+
+.loadmoreButton{
+    text-align:center;
+    padding:10px 2%;
+    background:#EEEEEE;
+    width:92%;
+    border-radius:5px;
+    float:left;
+    margin:10px 2%;
+    font-family: "CronosProRegular";
+    font-size:22px !important;
+    color:#666 !important;
+}
+
+.commentsButton{
+    text-align:center;
+    padding:10px 2%;
+    background:#8BC33E;
+    width:92%;
+    border-radius:5px;
+    float:left;
+    margin:0px 2% 10px;
+    text-decoration: none;
+    font-family: "CronosProRegular";
+    font-size:22px !important;
+    color:#fff !important;
+}
+
+.amount{
+    width:auto;
+    float:left;
+    margin-top:20px;
+}
+
+.detailAmount{
+/*
+    width:90%;
+    float:left;
+    margin-top:2px;
+    */
+    width:auto;
+    float:left;
+}
+
+.commentsList{
+    clear:both;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.comments{
+    margin:10px 0px;
+}
+
+.status{
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333 !important;
+}
+
+.commentContent{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666 !important;
+}
+
+.commentedName{
+    margin-right:10px;
+    font-family: "CronosProRegular";
+    font-size:12px !important;
+    color:#999 !important;
+}
+
+div#commentContaintainer{
+    clear:both;
+    border-top: 1px solid #bbbbbb;
+    margin: 10px;
+}
+
+.buttonContainer{
+    background-color:#ffffff;
+}
+
+.inputLabelComents{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#333 !important;
+    margin:0px;
+    margin:0px!important;
+    text-align:left;
+}
+
+.tick{
+    float:right;
+    width:29px;
+    height:28px;
+    background-image: url(../img/tick.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:0.8em;
+    top:50%;
+    margin-top:-.88em;
+}
+.untick{
+    float:right;
+    width:29px;
+    height:28px;
+    background-image: url(../img/untick.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:0.8em;
+    top:50%;
+    margin-top:-.88em;
+}
+
+.off{
+    float:right;
+    width:63px;
+    height:28px;
+    background-image: url(../img/off.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:0.8em;
+    top:50%;
+    margin-top:-.88em;
+}
+.on{
+    float:right;
+    width:63px;
+    height:28px;
+    background-image: url(../img/on.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:0.8em;
+    top:50%;
+    margin-top:-.88em;
+}
+
+.switch{
+    float:right;
+    position:absolute;
+    right:1em;
+    top:50%;
+    margin-top:-.88em;
+}
+.title{
+    margin:10px;
+    text-align:center;
+    font-family: "CronosProBold";
+    font-size:14px !important;
+    color:#333;
+}
+
+.separatorLine {
+    text-align:center;
+    background-color: rgb(217, 214, 214);
+    border-bottom: 1px solid #fff;
+    line-height:0.1em;
+    margin:20px 10px;
+    font-family: "CronosProBold";
+    font-size:14px !important;
+    color:#333;
+}
+.separtorText { 
+    background:#EBEBEB;
+    padding:0 10px; 
+}
+
+.menuSeparatorLine {
+    text-align:center;
+    background-color: #0D0C0C;
+    border-bottom: 1px solid rgb(75, 63, 63);
+    line-height:0.1em;
+    margin:20px 10px 10px;
+    font-family: "CronosProBold";
+    font-size:14px !important;
+    color:#FFFFFF;
+    clear: both;
+}
+.menuSepartorText {
+    background:#2a2a2a;
+    padding:0 10px; 
+}
+
+.userTitle{
+    margin:10px;
+    text-align:center;
+    font-family: "CronosProRegular";
+    font-size:22px !important;
+    color:#333;
+}
+.appheader{
+    font-family: "CronosProBold";
+    font-size:18px !important;
+    color:#ffffff;
+}
+.imageheader{
+	text-align: center;
+	display: block;
+	margin: 0 15%;
+	padding: 7px 0;
+    height: 30px;
+}
+.ui-content #countryList{
+    bottom : 50px;
+}
+
+.ui-content .listUI{
+    margin : 10px ;
+}
+/*
+.ui-content .listUI li{
+    //margin : 5px ;
+}
+*/
+.ui-content .listUI a{
+    padding: 10px;
+    font-family: "CronosProRegular";
+    font-size:17px !important;
+    color:#333;
+}
+
+.ui-content .listUI label{
+    font-family: "CronosProRegular";
+    font-size:17px !important;
+    color:#333;
+    margin-top:5px;
+    margin-bottom:5px;
+    width: 97%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-content .settingsList li a{
+    background-color:#fff !important;
+}
+
+.ui-content #allList{
+    margin : 0px;
+    clear: both;
+}
+
+.ui-content #allList a{
+    min-height:100px !important;
+}
+.ui-content #allList .allListImage{
+    padding: 10px 10px;
+    max-width:100px;
+    max-height:100px;
+    border-radius:20px !important;
+}
+.ui-content #allList h2{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#333;
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+}
+
+.ui-content #allList h3{
+    font-family: "CronosProRegular";
+    font-size:14px !important;
+    color:#333;
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+}
+
+.ui-page-theme-a .ui-btn{
+	background-color: #EBEBEB /*{a-bup-background-color}*/;
+}
+
+.ui-content #categoryList{
+    margin : 0px;
+}
+
+.ui-content #categoryList a{
+    min-height:80px !important;
+}
+.ui-content #categoryList img{
+    padding: 10px 10px;
+}
+
+.ui-content #categoryList h2{
+    padding: 22px 0px;
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#333;
+}
+
+.ui-content #searchList{
+    margin : 0px;
+    clear: both;
+}
+
+.ui-content #searchList a{
+    min-height:100px !important;
+}
+.ui-content #searchList .allListImage{
+    padding: 10px 10px;
+    max-width:100px;
+    max-height:100px;
+    margin: 0px;
+    border-radius:20px !important;
+}
+
+.ui-content #searchList h2{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#333;
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+}
+
+.ui-content #searchList h3{
+    font-family: "CronosProRegular";
+    font-size:14px !important;
+    color:#333;
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+}
+
+.ui-content #categoryHomeList{
+    margin : 0px;
+}
+
+.ui-content #categoryHomeList a{
+    min-height:80px !important;
+}
+.ui-content #categoryHomeList img{
+    margin:10px;
+}
+
+.ui-content #categoryHomeList h2{
+    padding: 22px 10px;
+}
+
+.ui-content #notificationList{
+    margin:5px !important;
+}
+.ui-content #notificationList li{
+    margin:5px !important;
+}
+
+.ui-content #notificationList a{
+    padding: 10px 0px 10px 3.25em !important;
+    background-color: #fff !important;
+}
+
+.ui-content #notificationList a::after{
+    background-image:none !important;
+}
+.ui-content #notificationList img{
+    margin:10px;
+}
+
+.ui-content #notificationList span{
+    font-size:10px;
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#999;
+}
+
+.ui-content #notificationList label{
+    display: block;
+    font-weight: 400;
+    margin: -2px 0;
+    white-space:pre-wrap;
+    height: 48px;
+    overflow: hidden;
+    font-family: "CronosProRegular";
+    font-size:12px !important;
+    color:#666;
+}
+
+.ui-content #termsList label{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    white-space:pre-wrap;
+}
+
+#termsCondition{
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+
+#termsCondition label{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666;
+}
+
+#termsCondition p{
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#666;
+}
+
+#termsCondition .termsHeader{
+    color: #333;
+    text-align: center;
+    font-size: 18px !important;
+}
+
+#termsCondition .termsSubContent{
+    text-indent: 20px;
+}
+#termsCondition .termsInnerSubContent{
+    margin-left: 20px;
+    text-indent: 15px;
+}
+
+
+.ui-footer{
+    background-color:#EBEBEB !important;
+    border-color:none !important;
+    border-width : 0px !important;
+    margin-top: 10px;
+}
+
+.ui-flipswitch{
+    background-color:#8BC33E !important;
+}
+
+.ui-flipswitch-on{
+    color:#fff !important;
+}
+
+.menu .ui-icon-carat-r::after{
+    background-image:none;
+}
+
+.logoutmenu{
+    text-align:center;
+    position:absolute;
+    bottom: 17px;
+    display: none;
+    width: 100%;
+}
+
+.menuLogin{
+    text-align:center;
+    position:absolute;
+    bottom: 10px;
+    display: block;
+    width: 96%;
+    margin-left: -10px;
+}
+
+.menuLoginTitle{
+    font-family: "CronosProRegular";
+    font-size:30px !important;
+    color: #fff !important;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.menuLoginCaption{
+   color:#8B8B8B;
+   font-family: "CronosProRegular";
+   font-size:12px !important;
+   margin: 0px 0px 10px 0px !important;
+}
+
+.menuLoginOption{
+   color:#8B8B8B;
+   font-family: "CronosProRegular";
+   font-size:12px !important;
+   margin: 0px 0px 10px 0px !important;
+}
+
+.menulabel{
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+}
+
+
+.ui-header .ui-navbar .ui-btn{
+    border-top-width: 0 !important;
+}
+
+.tabLabel{
+    font-family: "CronosProRegular";
+    font-size:14px !important;
+    color: #666 !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #e8e8e8 !important;
+}
+
+a.tabLabel.ui-link.ui-btn.ui-btn-active {
+    font-family: "CronosProRegular";
+    font-size:14px !important;
+    color: #426AB2 !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #092E6E !important;
+}
+
+.menuheader .ui-btn-left{
+    left : 1em;
+}
+
+.socialImages{
+    width: 58px;
+    height: 58px;
+    display: inline-block !important;
+}
+
+.menuImage{
+    display:inline-block;
+    float:left;
+    margin-right:10px;
+    margin-top: 2px;
+}
+
+.sectionHeader{
+    float: left;
+    padding-left : 7px;
+    margin: 5px 0px 0px 5px !important;
+    font-family: "CronosProRegular";
+    font-size:20px !important;
+    color:#333;
+}
+.moreButton{
+    float: right;
+    margin: 5px !important;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1px 12px 0px;
+    color:#999;
+    font-family: "CronosProRegular";
+    font-size:15px !important;
+}
+.separtor{
+    float: left;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    width:100%;
+    margin-left: 5px;
+}
+
+.allsepartor{
+    float: left;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    width:100%;
+    margin-left: 5px;
+}
+
+.sectionItems{
+    margin: 10px 10px 60px 10px;
+}
+
+.sectionItems .sectionImg{
+    width: 120px;
+    height: 120px;
+    border-radius:20px;
+}
+
+.roundedCorner{
+    border-radius:20px;
+}
+
+.sectionItems .name{
+    text-align: left;
+    font-family: "CronosProRegular";
+    font-size:20px !important;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:100%;
+}
+.sectionItems .amount{
+    margin-top:0px;
+}
+/*
+.ui-popup-container {
+    max-width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 42px;
+    background-color:  #426AB2;
+}
+*/
+.ui-popup-screen{
+    background-color:  #171717;
+}
+
+div#popupBasic.ui-popup.ui-body-inherit.ui-overlay-shadow.ui-corner-all{
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+#searchbar{
+    border-width: 0px;
+    border-style: none;
+}
+
+.searchIcon{
+    width:50px;
+    margin: 10px;
+    position: absolute;
+    top:.4em;
+    right:.4em;
+}
+.searchIcon a{
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/search.png);
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 4.5em;
+}
+
+.tickIcon{
+    background-image: url(../img/tickIcon.png);
+    height:16px;
+    width:16px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:.3em;
+    right:.4em;
+}
+
+.closeIcon{
+    background-image: url(../img/close.png);
+    height:16px;
+    width:16px;
+    float:left;
+    margin: 10px;
+}
+
+.ui-input-text{
+    background-color: transparent !important;    
+    border: 0px 0px 1px 0px solid #000 !important;
+    border-radius: 1px;
+    color:#000 !important;
+    float:left;
+    width: 100%;
+}
+
+ .ui-input-search{
+    background-color: transparent !important;
+    border: 0px 0px 1px 0px solid #000 !important;
+    border-radius: 1px;
+    color:#000 !important;
+    float:left;
+    width: 70%;
+    margin-left:13%;
+ }
+ 
+ .ui-input-search input{
+    color:#fff;
+ }
+
+.owl-carousel{
+    float:left;
+}
+
+.rateContainer{
+    font-size: 16px;
+    margin: .5em 0;
+    padding: .7em 1em;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rateContainer span{
+    font-size:12px;
+    color:#A0A0A0;
+}
+
+.rateContainer .loadmoreButton{
+    text-align:center;
+    padding:10px 2%;
+    background:#EEEEEE;
+    width:45%;
+    border-radius:5px;
+    color:#000000 !important;
+    float:right;    
+    margin:0px;
+}
+
+.rateContainer .commentsButton{
+    text-align:center;
+    padding:10px 2%;
+    background:#8BC33E;
+    width:45%;
+    border-radius:5px;
+    float:left;
+    margin:0px;
+    font-family: "CronosProRegular";
+    font-size:22px !important;
+    color:#fff;
+}
+
+.ui-popup .ui-field-contain > label{
+    width:0px !important;
+}
+
+.signinContainer{
+    text-align:center;
+    display: inline-block;
+    width: 96%;
+    margin:2%;
+    background-color: #fff;
+}
+
+.signinSocial{
+    text-align:center;
+    width: 100%;
+    margin-top:5px;
+}
+
+.signinContainer .ui-input-text{
+    margin:2%;
+    width:96%
+}
+
+.signinContainer .commentsButton{
+    margin-top:10px;
+    font-family: "CronosProRegular";
+    font-size:22px !important;
+    color:#fff;
+}
+
+#siginUsername, #registerName{
+    background-image: url(../img/username.png);
+    background-repeat: no-repeat;
+    height:43px;
+    padding-left:50px;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333;
+}
+
+#siginPassword, #registerPassword{
+    background-image: url(../img/password.png);
+    background-repeat: no-repeat;
+    height:43px;
+    padding-left:50px;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333;
+}
+
+#registerRePassword{
+    background-image: url(../img/repassword.png);
+    background-repeat: no-repeat;
+    height:43px;
+    padding-left:50px;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333;
+}
+
+#registerMail, #forgotName{
+    background-image: url(../img/mailUserName.png);
+    background-repeat: no-repeat;
+    height:43px;
+    padding-left:50px;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333;
+}
+
+.ui-icon-carat-r::after{
+    background-image: url(../img/rightArrow.png);
+    width:10px;
+    height:15px;
+}
+
+
+.registerLinkContainer{
+    text-align:center;
+    width: 100%;
+}
+
+.registerLink{
+    margin-left:5px;
+    text-decoration: underline;
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#8bc33e;
+}
+
+.registerNeed{
+    font-family: "CronosProRegular";
+    font-size:18px !important;
+    color:#333;
+}
+
+
+.rememberContainer{
+    float: left;
+    width: 96%;
+    margin: 2%;
+}
+
+.checkImg{
+    background-image: url(../img/uncheck.png);
+    height:21px;
+    width:21px;
+    float:left;
+}
+
+.rememberText{
+    float: left;
+    padding: 3px;
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color:#333333;
+}
+
+.caption{
+    text-align:center;
+    font-size: 12px;
+    font-family: "CronosProRegular";
+    font-size:13px !important;
+    color:#999999;
+}
+
+textarea#commentText{
+    margin-bottom:20px;
+}
+
+.homeIcon{
+    width:16px;
+    height:17px;
+    background-image: url(../img/home.png);
+}
+.configrationIcon{
+    width:19px;
+    height:19px;
+    background-image: url(../img/settings.png);
+}
+
+.notificationIcon{
+    width:19px;
+    height:18px;
+    background-image: url(../img/notification.png);
+}
+
+.termsIcon{
+    width:16px;
+    height:14px;
+    background-image: url(../img/terms.png);
+}
+
+.logoutIcon{
+    width:23px;
+    height:19px;
+    background-image: url(../img/logout.png);
+}
+
+.notificationCount{
+    width:25px;
+    height:25px;
+    background-image: url(../img/notificationCount.png);
+}
+
+.facebook{
+    background-image: url(../img/facebook.png);
+}
+.yahoo{
+    background-image: url(../img/yahoo.png);
+}
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+.google{
+    background-image: url(../img/google.png);
+}
+
+.menuIcon{
+    top:12px;
+    width:21px;
+    height:16px;
+    background-image: url(../img/menu.png);
+    margin: 10px;
+    padding-right: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:.4em;
+}
+
+.backArrow{
+    width:11px;
+    height:18px;
+    background-image: url(../img/backArrow.png);
+    margin: 10px;
+    padding-right: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:.4em;
+}
+
+div.menuheader.ui-header.ui-bar-inherit.ui-header-fixed.slidedown.ui-panel-fixed-toolbar.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(17em, 0, 0);
+    -moz-transform: translate3d(17em, 0, 0);
+    transform: translate3d(17em, 0, 0);
+}
+.ui-panel-page-content-position-left {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(17em, 0, 0);
+    -moz-transform: translate3d(17em, 0, 0);
+    transform: translate3d(17em, 0, 0);
+}
+.loadingContainer{
+    padding:10% 44%;
+}
+.loading {
+    background-image: url(../img/loading.gif);
+    width:48px;
+    height:48px;
+}
+
+#closeDiv{
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    opacity: 0.5;
+    background: linear-gradient(#FFF, #F1F1F1) repeat scroll 0% 0% #EEE;
+}
+
+.noRecords{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "CronosProRegular";
+    font-size:16px !important;
+    color: #666 !important;
+}
+
+.categoryName{
+    font-family: "CronosProRegular";
+    font-size:14px !important;
+    color:#B8B8B8;
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:98%;
+}
+
+.outer, .outer img { width:200px; height:200px; margin:0;padding:0 }
+
+
+
+/* Medium density (160), mdpi */
+/*
+@media screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (-webkit-device-pixel-ratio: 1) {
+.homeIcon{
+    width:24px;
+    height:25px;
+    background-image: url(../img/mdpi/home.png);
+}
+.configrationIcon{
+    width:28px;
+    height:28px;
+    background-image: url(../img/mdpi/settings.png);
+}
+
+.notificationIcon{
+    width:28px;
+    height:26px;
+    background-image: url(../img/mdpi/notification.png);
+}
+
+.termsIcon{
+    width:24px;
+    height:21px;
+    background-image: url(../img/mdpi/terms.png);
+}
+
+.logout{
+    width:34px;
+    height:28px;
+    background-image: url(../img/mdpi/logout.png);
+}
+
+.notificationCount{
+    width:37px;
+    height:37px;
+    background-image: url(../img/mdpi/notificationCount.png);
+}
+
+.menuIcon{
+    top:10px;
+    width:21px;
+    height:16px;
+    background-image: url(../img/mdpi/menu.png);
+}
+}
+
+*/
+/* High density (240), hdpi */
+/*
+@media screen 
+and (min-device-width : 480px)
+and (max-device-width : 800px)
+and (-webkit-device-pixel-ratio: 1.5) {
+.homeIcon{
+    width:33px;
+    height:35px;
+    background-image: url(../img/hdpi/home.png);
+}
+.configrationIcon{
+    width:38px;
+    height:36px;
+    background-image: url(../img/hdpi/settings.png);
+}
+
+.notificationIcon{
+    width:38px;
+    height:38px;
+    background-image: url(../img/hdpi/notification.png);
+}
+
+.termsIcon{
+    width:32px;
+    height:29px;
+    background-image: url(../img/hdpi/terms.png);
+}
+
+.logout{
+    width:47px;
+    height:48px;
+    background-image: url(../img/hdpi/logout.png);
+}
+
+.notificationCount{
+    width:50px;
+    height:50px;
+    background-image: url(../img/hdpi/notificationCount.png);
+}
+.menuIcon{
+    top:7px;
+    width:32px;
+    height:30px;
+    background-image: url(../img/hdpi/menu.png);
+}
+}
+*/
+/* Extra high density (320), xhdpi */
+/*
+@media screen and (-webkit-device-pixel-ratio: 2) {
+.homeIcon{
+    width:49px;
+    height:52px;
+    background-image: url(../img/xhdpi/home.png);
+}
+.configrationIcon{
+    width:57px;
+    height:57px;
+    background-image: url(../img/xhdpi/settings.png);
+}
+
+.notificationIcon{
+    width:57px;
+    height:54px;
+    background-image: url(../img/xhdpi/notification.png);
+}
+
+.termsIcon{
+    width:48px;
+    height:43px;
+    background-image: url(../img/xhdpi/terms.png);
+}
+
+.logout{
+    width:70px;
+    height:57px;
+    background-image: url(../img/xhdpi/logout.png);
+}
+
+.notificationCount{
+    width:75px;
+    height:75px;
+    background-image: url(../img/xhdpi/notificationCount.png);
+}
+.menuIcon{
+    top:7px;
+    width:48px;
+    height:45px;
+    background-image: url(../img/xhdpi/menu.png);
+}
+
+}
+*/
+/* Extra Extra high density (640), xxhdpi */
+/*
+@media screen and (-webkit-device-pixel-ratio: 3) {
+.homeIcon{
+    width:66px;
+    height:70px;
+    background-image: url(../img/xxhdpi/home.png);
+}
+.configrationIcon{
+    width:76px;
+    height:76px;
+    background-image: url(../img/xxhdpi/settings.png);
+}
+
+.notificationIcon{
+    width:76px;
+    height:72px;
+    background-image: url(../img/xxhdpi/notification.png);
+}
+
+.termsIcon{
+    width:64px;
+    height:58px;
+    background-image: url(../img/xxhdpi/terms.png);
+}
+
+.logout{
+    width:94px;
+    height:76px;
+    background-image: url(../img/xxhdpi/logout.png);
+}
+
+.notificationCount{
+    width:100px;
+    height:100px;
+    background-image: url(../img/xxhdpi/notificationCount.png);
+}
+.menuIcon{
+    top:7px;
+    width:64px;
+    height:60px;
+    background-image: url(../img/xxhdpi/menu.png);
+}
+
+}
+*/
+/*iphone 2g - 4s css*/
+/*
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px){
+.homeIcon{
+    width:16px;
+    height:17px;
+    background-image: url(../img/home.png);
+}
+.configrationIcon{
+    width:19px;
+    height:19px;
+    background-image: url(../img/settings.png);
+}
+
+.notificationIcon{
+    width:19px;
+    height:18px;
+    background-image: url(../img/notification.png);
+}
+
+.termsIcon{
+    width:16px;
+    height:14px;
+    background-image: url(../img/terms.png);
+}
+
+.logout{
+    width:23px;
+    height:19px;
+    background-image: url(../img/logout.png);
+}
+
+.notificationCount{
+    width:25px;
+    height:25px;
+    background-image: url(../img/notificationCount.png);
+}
+
+.menuIcon{
+    top:7px;
+    width:23px;
+    height:22px;
+    background-image: url(../img/mdpi/menu.png);
+}
+}
+*/
+/*iphone 2g - 4s @2x css*/
+/*
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (-webkit-device-pixel-ratio: 2){
+.homeIcon{
+    width:33px;
+    height:35px;
+    background-image: url(../img/home@2x.png);
+}
+.configrationIcon{
+    width:38px;
+    height:38px;
+    background-image: url(../img/settings@2x.png);
+}
+
+.notificationIcon{
+    width:38px;
+    height:36px;
+    background-image: url(../img/notification@2x.png);
+}
+
+.termsIcon{
+    width:32px;
+    height:29px;
+    background-image: url(../img/terms@2x.png);
+}
+
+.logout{
+    width:47px;
+    height:38px;
+    background-image: url(../img/logout@2x.png);
+}
+
+.notificationCount{
+    width:50px;
+    height:50px;
+    background-image: url(../img/notificationCount@2x.png);
+}
+
+}
+*/
+/*iphone5 css*/
+/*
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+.homeIcon{
+    width:33px;
+    height:35px;
+    background-image: url(../img/home@2x.png);
+}
+.configrationIcon{
+    width:38px;
+    height:38px;
+    background-image: url(../img/settings@2x.png);
+}
+
+.notificationIcon{
+    width:38px;
+    height:36px;
+    background-image: url(../img/notification@2x.png);
+}
+
+.termsIcon{
+    width:32px;
+    height:29px;
+    background-image: url(../img/terms@2x.png);
+}
+
+.logout{
+    width:47px;
+    height:38px;
+    background-image: url(../img/logout@2x.png);
+}
+
+.notificationCount{
+    width:50px;
+    height:50px;
+    background-image: url(../img/notificationCount@2x.png);
+}
+
+}
+*/

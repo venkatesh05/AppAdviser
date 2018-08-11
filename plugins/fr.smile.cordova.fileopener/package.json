@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "name": "fr.smile.cordova.fileopener",
+    "cordova_name": "FileOpener",
+    "description": "Plugin to download and open files with default application for Android devices",
+    "license": "MIT",
+    "repo": "https://github.com/Smile-SA/cordova-plugin-fileopener",
+    "keywords": [
+        "file",
+        " downloader",
+        " opener",
+        " android",
+        " extension",
+        " MIME types",
+        " cordova",
+        " plugin"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

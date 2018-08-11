@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div data-role="page" id="gallery">
+            <div role="main" class="ui-content" id="galleryMainContent">
+                <div id="galleryDiv">
+                    
+                </div>
+                <div id="closeDiv">
+                    <a class="closeIcon" href="#"></a>
+                </div>
+            </div>
+            <script>
+                function closing(){
+                    window.history.back();
+                }
+            
+                $(document).on('pagecreate', "#gallery", function (event, data) {
+                    $('#galleryDiv').html('');
+                    var obj = window.localStorage.getItem("detailObj");
+                    obj = $.parseJSON(decodeURI(obj.replace(/\"/g, "'")));
+                    if(obj.screenshots){
+                        var splash = '';
+                        for(var i=0;i<obj.screenshots.length;i++){
+                            splash +='<div class="item"><img src="'+obj.screenshots[i]+'" alt="No image"></div>';
+                        }
+                        $('#galleryDiv').append(splash);
+                    }
+                });
+                $(document).on('pagebeforeshow', '#detail', function (event, data) {
+                    $("#gallery").remove();
+                });
+                $(document).on('pagehide', "#gallery", function (event, data) {
+                    $(document).off('click', ".closeIcon",closing);
+                    $("#gallery").remove();
+                });
+                $(document).on('pagebeforeshow', "#gallery", function (event, data) {
+                    $('#galleryDiv').owlCarousel({
+                        navigation : false, // Show next and prev buttons
+                        slideSpeed : 300,
+                        paginationSpeed : 400,
+                        autoHeight : true,
+                        singleItem:true,
+                        pagination:false
+                    });
+                    $('div#galleryDiv.owl-carousel.owl-theme').css("height",$.mobile.height+"px");
+                    var owl = $('#galleryDiv').data('owlCarousel');
+                    owl.goTo(window.localStorage.getItem("screenIndex"));
+                    if($.mobile.platform == $.mobile.android){
+                        $('#closeDiv').css('display','none');
+                    }
+                    $(document).on('click', ".closeIcon",closing);                    
+                });
+            </script>
+            <style>
+                #galleryDiv .item img{
+                    display: block;
+                    width: 100%;
+                }
+                .closeIcon{
+                    padding-right: 50px;
+                    background-repeat: no-repeat;
+                }
+            </style>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Detail page</title>
+</head>
+<body>
+    <div data-role="page" id="detail" data-dom-cache="true">
+        
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+            <h1 class="appheader headerONE"><img src='img/Apptualizate.png' class="imgHeader"/></h1>
+            <a href="#" data-rel="back" class="backArrow"></a>
+        </div>
+        
+        <div role="main" class="ui-content">
+            
+            <div class="headerContainer" data-position="fixed">
+                <div class="thampnailContainer">
+                    <img class="roundedCorner" src=""/>
+                </div>
+                <div class="detailContainer">
+                    <div class="detailName"></div>
+                    <div class="hint"></div>
+                    <div id="rating"></div>
+                    <div>
+                        <div class="detailAmount" id="detailAmount"></div>
+                        <div id="view" class="lang downloadButton" data-lang="view"></div>
+                        <div id="download" class="lang downloadButton" data-lang="download"></div>
+                        <div id="open" class="lang downloadButton" data-lang="open"></div>
+                        <div id="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="lang ui-btn-active" data-lang="description" data-inline="true" id="descTab" href="#"></a></li>
+                    <li><a class="lang" data-lang="reviews" data-inline="true" id="reviewTab" href="#"></a></li>
+                </ul>
+            </div>
+            
+            <div id="description">
+                <div id="splash" class="owl-carousel">
+                    
+                </div>
+                <div class="descriptionContent">
+                </div>
+                
+                <div id="whatsNew">
+                    <div class="lang detailSubHeading" data-lang="whatsnew"></div>
+                    <div class="whatsNewContent"></div>
+                </div>
+                
+                <div id="version">
+                    <div class="lang detailSubHeading" data-lang="version"></div>
+                    <div class="versionContent"></div>
+                </div>
+            </div>
+            
+            <div id="reviews">
+                <div id="starContaintainer">
+                    <div id="avgRating">
+                        <div id="avgRatingCount" class="ratingStyles"></div>
+                        <div id="avgRatingStar" class="ratingStyles"></div>
+                    </div>
+                </div>
+                <div id="commentContaintainer">
+                    
+                </div>
+                <div class="buttonContainer">
+                    <a class="lang loadmoreButton" data-lang="read" id="loadmoreButton"></a>
+                    <a class="lang commentsButton" id="postComments" data-transition="pop" data-rel="popup" data-position-to="origin" data-lang="rateButton"></a>
+                </div>
+                <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                    <form>
+                        <div style="padding:10px 20px;" class="rateContainer">
+                            <div id="rate"></div>
+                            <span class="lang hintTextRating" data-lang="rate"></span>
+                            <div style="clear:both">
+                                <label class="lang inputLabelComents" data-lang="summary"></label>
+                                <input name="summaryText" id="summaryText" placeholder="Ej: Fantastica aplicacion" value="" type="text">
+                                    </div>
+                            <div style="clear:both">
+                                <label class="lang inputLabelComents" data-lang="comment"></label>
+                                <textarea cols="40" rows="8" name="commentText" id="commentText"></textarea>
+                            </div>
+                            
+                            <div class="buttonContainer">
+                                <a class="lang commentsButton" id="submit" data-lang="submit"></a>
+                                <a class="lang loadmoreButton" id="cancel" data-lang="cancel" data-rel="back"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--
+            <div id="galleryMainDiv" style="display:none"><div id="gallery"></div></div>
+            <div data-role="popup" id="popupGallery" data-theme="a" class="ui-corner-all">
+                
+            </div>
+            -->
+            
+            
+        </div>
+    </div>
+</body>
+</html>

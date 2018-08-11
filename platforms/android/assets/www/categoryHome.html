@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CategoryHome</title>
+    </head>
+    <body>
+        <div data-role="page" id="categoryHome" data-dom-cache="true">
+            <div data-role="header" data-position="fixed" class="homeHeader">
+                <h1 class="appheader" id="categoryHeadText"></h1>
+                <a href="#" data-rel="back" class="backArrow"></a>
+                <div class="searchIcon" id="categorySearchIcon">
+                    <a href="#" ></a>
+                </div>
+                <div data-role="navbar" id="catNavTab">
+                    <ul id="categoryHomeUL">
+                        <li tagId="categoryPageTab"><a class="lang tabLabel ui-link ui-btn" data-lang="categories" data-inline="true" href="#categoryPageTab"></a></li>
+                        <li tagId="categoryHomeTab"><a class="lang tabLabel ui-link ui-btn" data-lang="initiation" data-inline="true" href="#categoryHomeTab"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div role="main" class="ui-content" id="categoryHomeContent">
+                <div id="categoryPageTab">
+                    <ul data-role="listview" id="categoryHomeList" class="listUI">
+                    </ul>
+                </div>
+                <div id="categoryHomeTab">
+                    <div id="categoryBanner">
+                    </div>
+                    <div class="categoryAppContent">
+                        <div class="loadingContainer"><div class="loading"></div></div>
+                    </div>
+                </div>
+            </div>
+                       
+        </div>
+    </body>
+</html>

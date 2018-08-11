@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9C096424-3C98-4DF7-A41B-C1BBF5D9D61A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Apptualizate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C1DF0808-BE57-4F40-BEE1-6A1FF3F80D7B</key>
+		<string>https://github.com/siva-anubavam/AppAdviser</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Apptualizate.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C1DF0808-BE57-4F40-BEE1-6A1FF3F80D7B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/siva-anubavam/AppAdviser</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C1DF0808-BE57-4F40-BEE1-6A1FF3F80D7B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C1DF0808-BE57-4F40-BEE1-6A1FF3F80D7B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppAdviser</string>
+		</dict>
+	</array>
+</dict>
+</plist>
